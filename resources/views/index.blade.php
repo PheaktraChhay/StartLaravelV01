@@ -62,16 +62,20 @@
                             <button type="button" class="btn btn-primary form-control mt-2 updatebtn">Update</button>
                         </form>
                         <br>
-                        <table id="dt-basic" class="table table-bordered table-hover table-striped">
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody id="tbodyTable">
-                            </tbody>
-                        </table>
+                        <div class="card">
+                            <div class="card-body">
+                                <table id="dt-basic" class="table table-bordered table-hover table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tbodyTable">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -252,7 +256,7 @@
             Swal.fire({
                 title: data_obj[0].name,
             })
-            
+
         }
         /////////// Sweet alert connectivity
         const Toast = Swal.mixin({
